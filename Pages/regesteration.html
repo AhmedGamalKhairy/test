@@ -1,0 +1,84 @@
+<html>
+    <head></head>
+    <body>
+        <h1> regesteration Form </h1>  
+        <form method="get">
+            
+            <input id="fname" placeholder="FirstName" name="FirstName" type="text" autofocus />
+            <br/>
+            <br/>
+            <label for="lname">LastName</label>
+            <input id="lname" name="LastName" type="text"/>
+            <br/>
+            <br/>
+            <label for="uage">Age</label>
+            <input id="uage" readonly value="20" name="UserAge" type="number"/>
+            <br/>
+            <br/>            
+            <label for="mail">Email</label>
+            <input id="mail" name="Email" type="email"/>
+            <br/>
+            <br/>            
+            <label for="pass">Password</label>
+            <input id="pass" required name="userpassword" type="password"/>*
+            <br/>
+            <br/>
+            <label for="comment">Comment</label>
+            <textarea name="usercomment" minlength="5" maxlength="50" id="comment"></textarea>
+            <br/>
+            <br/>
+            <label for="photo">uploade your photo</label>
+            <input id="photo" type="file" accept="image/png" name="uphoto" multiple />
+            <br/>
+            <br/>
+            <label for="color">choose color</label>
+            <input id="color" type="color" name="ucolor" />
+            <br/>
+            <br/>
+            <label for="date">date</label>
+            <input id="date" type="date"  name="udate"/>
+            <br/>
+            <br/>
+            <hr>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <br>
+            <br>
+            <hr>
+            <label for="student">Student</label>
+            <input type="radio" name="statuse" id="student" value="student">
+            <label for="graduate">graduate</label>
+            <input type="radio" name="statuse" id="graduate" value="graduate">
+            <br>
+            <br>
+            <hr>
+            <label for="c#">C#</label>
+            <input type="checkbox" id="c#" name="proglan" value="c#">
+            <br>
+            <br>
+            <label for="sql">SQL</label>
+            <input type="checkbox" id="sql" name="proglan" value="sql">
+            <br>
+            <br>
+            <label for="js">JS</label>
+            <input type="checkbox" id="js" name="proglan" value="js">
+            <br>
+            <br>
+            <hr>
+            <label for="con">select your country  :</label>
+            <select name="country" id="con">
+                <option value="Egypt">Egypt</option>
+                <option value="sudan">sudan</option>
+                <option value="iran">iran</option>
+                <option value="iraq">iraq</option>
+            </select>
+            <br>
+            <br>
+            <input type="range" min="0" max="100" step="20" name="range">
+            <button  type="submit" >regester</button>
+            <input type="reset" value="delete" >
+        </form> 
+    </body>
+</html>
